@@ -36,34 +36,47 @@
 		<input type="hidden" name="pass" size="20" value="<? echo $_POST["pass"];?>"/>
 		<input type="hidden" name="r_pass" size="20" value="<? echo $_POST["r_pass"];?>"/>
 			<tr>
-			<td><span class="Estilo2">Datos Personales del Usuario:</span><label><input type="text" name="user" size="20" value="<? echo $_POST["user"];?>"/><br /><br>
-          </label>
-	        <div align="left">
+			<td><span class="Estilo2">Datos Personales del Usuario:</span>
+			  <div align="left">
 			</div>
 	          <table width="937">
 	            <tr>
+                  <td><div align="right" class="Estilo3">Usuario: </div></td>
+	              <td><div align="center"><?php echo $_POST["n_user"];?></div></td>
+	              <td colspan="2" rowspan="1">&nbsp;</td>
+                </tr>
+	            
+	            <tr>
+                  <td><div align="right" class="Estilo3"><strong>Nombre</strong>: </div></td>
+	              <td><div align="center">
+	                <input name="nomb" type="text" size="30"/>
+	                </div></td>
+	              <td><div align="right" class="Estilo4"><strong>Tel&eacute;fono:</strong></div></td>
+	              <td><div align="center">
+	                <input name="telef" type="text" size="30"/>
+	                </div></td>
+                </tr>
+	            <tr>
 	              <td><div align="right" class="Estilo3">Apellido: </div></td>
 		    	  <td><div align="center"><input name="ape" type="text" size="30"/></div></td>
-				  <td><div align="right" class="Estilo4"><strong>Nombre:</strong></div></td>
-		    	  <td><div align="center"><input name="nomb" type="text" size="30"/></div></td>
-				</tr>
-	            <tr>
-	              <td><div align="right" class="Estilo4"><strong>DNI: </strong> </div></td>
-		    	  <td><div align="center"><input name="dni" type="text" size="30"/></div></td>
 				  <td><div align="right" class="Estilo4"><strong>Ocupacion:</strong></div></td>
 		    	  <td><div align="center"><input name="ocup" type="text" size="30"/></div></td>
 				</tr>
 	            <tr>
+                  <td><div align="right" class="Estilo4"><strong>E-Mail: </strong> </div></td>
+	              <td><div align="center">
+	                <input name="email" type="text" size="30"/>
+	                </div></td>
 	              <td><div align="right" class="Estilo4"><strong>Direccion:</strong></div></td>
-		    	  <td><div align="center"><input name="dire" type="text" size="30"/></div></td>
-				  <td><div align="right" class="Estilo4"><strong>Telefono:</strong></div></td>
-		    	  <td><div align="center"><input name="telef" type="text" size="30"/></div></td>
-				</tr>
-				<tr>
-	              <td><div align="right" class="Estilo4"><strong>Localidad:</strong></div></td>
-		    	  <td><div align="center"><input name="loc" type="text" size="30"/></div></td>
-				  <td><div align="right" class="Estilo4"><strong>Provincia:</strong></div></td>
-		    	  <td><div align="center"><input name="prov" type="text" size="30"/></div></td>
+	              <td><div align="center">
+	                <input name="direc" type="text" size="30"/>
+	                </div></td>
+                </tr>
+	            <tr>
+	              <td><div align="right" class="Estilo4"><strong>DNI: </strong> </div></td>
+		    	  <td><div align="center"><input name="dni" type="text" size="30"/></div></td>
+				  <td><div align="right" class="Estilo4"><strong>Localidad y Prov:</strong></div></td>
+		    	  <td><div align="center"><input name="locprov" type="text" size="30"/></div></td>
 				</tr>
               </table>
             <div align="center">

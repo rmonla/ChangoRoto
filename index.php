@@ -31,15 +31,15 @@
 	    <table>
 			    	<tr>
 		      		  <td><div align="right" class="Estilo3">Nombre de Usuario: </div></td>
-				    	<td><div align="center"><input name="user" type="text" /></div></td>
+				    	<td><div align="center"><input name="n_user" type="text" /></div></td>
 					</tr>
 					<tr>
 			      		<td><div align="right" class="Estilo3">Password:</div></td>
-				    	<td><div align="center"><input name="pass" type="password"/></div></td>
+				    	<td><div align="center"><input name="n_pass" type="password"/></div></td>
 					</tr>
 					<tr>
 			      		<td><div align="right" class="Estilo4"><strong>Reingrese su Password</strong>:</div></td>
-				    	<td><div align="center"><input name="r_pass" type="password"/></div></td>
+				    	<td><div align="center"><input name="n_rpass" type="password"/></div></td>
 					</tr>
 				</table>
 			</div>
