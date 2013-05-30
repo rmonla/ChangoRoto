@@ -19,7 +19,7 @@
 </style>
 </head>
 <body>
-<?
+<?php
 	// process form
 	$link = mysql_connect("localhost", "root");
 	mysql_select_db("chango");
@@ -33,8 +33,7 @@
     </tr>
     <tr>
 		<form name="registro" method="POST" action="confirm.php">
-		<input type="hidden" name="pass" size="20" value="<? echo $_POST["pass"];?>"/>
-		<input type="hidden" name="r_pass" size="20" value="<? echo $_POST["r_pass"];?>"/>
+		
 			<tr>
 			<td><span class="Estilo2">Datos Personales del Usuario:</span>
 			  <div align="left">
@@ -43,7 +42,7 @@
 	            <tr>
                   <td><div align="right" class="Estilo3">Usuario: </div></td>
 	              <td><div align="center"><?php echo $_POST["n_user"];?></div></td>
-	              <td colspan="2" rowspan="1">&nbsp;</td>
+	              <td colspan="2" rowspan="1"><input name="n_pass" type="hidden" id="n_pass" value="<?php echo $_POST["n_pass"];?>" /></td>
                 </tr>
 	            
 	            <tr>
